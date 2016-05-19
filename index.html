@@ -13,8 +13,10 @@
   <!-- ================================================================
        |                             CSS                              |
        ================================================================ -->
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="normalize.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
   <div class="gradient-overlay">
@@ -27,20 +29,33 @@
 
         <div class="body panel-horizontal">
           <p>
-            TissueMAPS is a web-based software facilitating interactive visualization and exploratory analysis of large-scale image datasets.
-            It allows the user to browse through images and analyze the corresponding measurement data in a visually assisted way.
+            TissueMAPS is a web-based software for high-performance computing and image-based profiling in the cloud.
+            It facilitates interactive visualization and real time statistical analysis of large-scale microscopy image datasets.
           </p>
           <b>COMING SOON</b>
           <p>For more information contact markus.herrmann at imls.uzh.ch</p>
         </div>
       </div>
 
-      <img class="screenshot" src="/resources/img/screenshot.png" alt=""/>
+      <div class="screenshots">
+        <img class="screenshot" src="/resources/img/screenshot.png" alt=""/>
+        <img class="screenshot" src="/resources/img/screenshot2.png" alt=""/>
+        <img class="screenshot" src="/resources/img/screenshot3.png" alt=""/>
+      </div>
     </div>
 
     <div class="logo-container">
       <img src="/resources/img/tmaps_logo.png" alt=""/>
     </div>
   </div>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script>
+    $(function() {
+      $('.screenshots').slick();
+    });
+  </script>
 </body>
 </html>

@@ -69,9 +69,13 @@ body {
 
 img.screenshot {
     margin-top: 5px;
-    border: 1px solid black;
-    width: 100%;
-    /* -webkit-box-shadow: 9px 9px 8px -9px rgba(184,184,184,1); */
-    /* -moz-box-shadow: 9px 9px 8px -9px rgba(184,184,184,1); */
-    /* box-shadow: 9px 9px 8px -9px rgba(184,184,184,1); */
+    height: 450px;
+    /* border: 1px solid black; */
+}
+
+.drop-shadow {
+
+    -webkit-box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.58);
+    -moz-box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.58);
+    box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.58);
 }
