@@ -1,0 +1,77 @@
+body, html {
+     height: 100%;
+}
+
+body {
+    font-family: Helvetica, 'Trebuchet MS', sans-serif;
+    background: #7D7D7D;
+    background-image: url("/resources/img/mocha.png");
+    background-repeat: repeat;
+}
+
+.gradient-overlay {
+    height: 100%;
+    /* background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0d…g9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNsZXNzaGF0LWdlbmVyYXRlZCkiIC8+PC9zdmc+); */
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.8) 100%);
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.8) 100%);
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.8) 100%);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.logo-container {
+    z-index: -1;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 100%;
+    text-align: right;
+}
+
+.logo-container > img {
+    width: 500px;
+    height: 500px;
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+    opacity: 0.6;
+    -webkit-mask-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.1)), to(#000000));
+}
+
+.main {
+    z-index: 100;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 800px;
+}
+
+.panel-horizontal {
+    border-top: 1px solid #626262;
+    border-bottom: 1px solid #222222;
+}
+
+.panel-vertical {
+    border-left: 1px solid #626262;
+    border-right: 1px solid #222222;
+}
+
+.content {
+    color: #DCDCDC;
+    background-color: #3D3D3D;
+}
+.header, .body {
+    padding: 10px;
+}
+.header {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+img.screenshot {
+    margin-top: 5px;
+    border: 1px solid black;
+    width: 100%;
+    /* -webkit-box-shadow: 9px 9px 8px -9px rgba(184,184,184,1); */
+    /* -moz-box-shadow: 9px 9px 8px -9px rgba(184,184,184,1); */
+    /* box-shadow: 9px 9px 8px -9px rgba(184,184,184,1); */
+}
