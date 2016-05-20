@@ -10,7 +10,12 @@ body {
 }
 
 .gradient-overlay {
+    overflow: scroll;
+    position: fixed;
+    width: 100%;
     height: 100%;
+    top: 0;
+    left: 0;
     /* background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0d…g9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNsZXNzaGF0LWdlbmVyYXRlZCkiIC8+PC9zdmc+); */
     background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.8) 100%);
     background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.8) 100%);
@@ -18,18 +23,15 @@ body {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.8) 100%);
 }
 
-.logo-container {
-    z-index: -1;
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    width: 100%;
-    text-align: right;
-}
-
-.logo-container > img {
+img.backdrop-logo {
     width: 500px;
     height: 500px;
+
+    z-index: -1;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+
     -webkit-filter: blur(3px);
     -moz-filter: blur(3px);
     -ms-filter: blur(3px);
@@ -40,9 +42,9 @@ body {
 
 .main {
     z-index: 100;
-    margin: 0 auto;
-    margin-top: 100px;
-    width: 800px;
+    margin-top: 50px;
+    /* In case the window has to be scrolled*/ 
+    margin-bottom: 50px;
 }
 
 .panel-horizontal {
@@ -69,8 +71,9 @@ body {
 
 img.screenshot {
     margin-top: 5px;
-    height: 463px;
-    /* border: 1px solid black; */
+    /* Hide initially, this will be overridden by the */
+    /* carousel plugin */
+    display: none;
 }
 
 .drop-shadow {
