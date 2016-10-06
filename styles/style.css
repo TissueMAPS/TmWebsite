@@ -4,69 +4,116 @@ body, html {
 
 body {
     font-family: Helvetica, 'Trebuchet MS', sans-serif;
-    background: #7D7D7D;
-    background-image: url("/resources/img/mocha.png");
+    background: #ebebeb;
+    background-image: url('/resources/img/mocha.png');
     background-repeat: repeat;
 }
 
-.gradient-overlay {
-    overflow: scroll;
-    position: fixed;
-    width: 100%;
+
+.background-image-container {
     height: 100%;
-    top: 0;
-    left: 0;
-    /* background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0d…g9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNsZXNzaGF0LWdlbmVyYXRlZCkiIC8+PC9zdmc+); */
-    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.8) 100%);
-    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.8) 100%);
-    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.8) 100%);
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.8) 100%);
+    position: static;
+    background-image: url('/resources/img/background.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* color: #f6f6f6; */
+    color: white;
+    text-align: center;
+
+    text-shadow: 0 0 5px  rgb(0,0,0),
+                 0 0 10px rgb(0,0,0),
+                 0 0 15px rgb(0,0,0),
+                 0 0 20px rgb(0,0,0);
+}
+.background-image-container h1 {
+    font-size: 8em;
+    font-weight: bold;
+    /* text-shadow: 0 0 5px rgb(0,0,0), */
+    /*              0 0 10px rgb(0,0,0), */
+    /*              0 0 15px rgb(0,0,0); */
+                 /* 0 0 20px rgb(255,17,119); */
+                 /* 0 0 35px rgb(255,17,119), */
+                 /* 0 0 40px rgb(255,17,119), */
+                 /* 0 0 50px rgb(255,17,119), */
+                 /* 0 0 75px rgb(255,17,119) ; */
+}
+.background-image-container h2 {
+    font-size: 3em;
+}
+.background-image-container .authors {
+    font-size: 2em;
+}
+.background-image-container .institution {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+.background-image-container hr {
+    border: 0;
+    border-top: 2px solid #aaa;
+    width: 75%;
+    box-shadow: 0 0 5px  rgb(0,0,0),
+                 0 0 10px rgb(0,0,0),
+                 0 0 15px rgb(0,0,0),
+                 0 0 20px rgb(0,0,0);
+}
+.background-image-container {
+    padding-top: 200px;
+}
+.background-image-container i {
+    font-size: 4em;
+    position: absolute;
+    bottom: 15px;
+    text-shadow: 0 0 5px  rgb(0,0,0),
+                 0 0 10px rgb(0,0,0),
+                 0 0 15px rgb(0,0,0),
+                 0 0 20px rgb(0,0,0);
+}
+.background-image-container .lab-logo {
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+}
+.background-image-container .uzh-logo {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
 }
 
-img.backdrop-logo {
-    width: 500px;
-    height: 500px;
-
-    z-index: -1;
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-
-    -webkit-filter: blur(3px);
-    -moz-filter: blur(3px);
-    -ms-filter: blur(3px);
-    filter: blur(3px);
-    opacity: 0.6;
-    -webkit-mask-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.1)), to(#000000));
-}
-
-.main {
-    z-index: 100;
-    margin-top: 50px;
-    /* In case the window has to be scrolled*/ 
-    margin-bottom: 50px;
-}
-
-.panel-horizontal {
-    border-top: 1px solid #626262;
-    border-bottom: 1px solid #222222;
-}
-
-.panel-vertical {
-    border-left: 1px solid #626262;
-    border-right: 1px solid #222222;
-}
 
 .content {
-    color: #DCDCDC;
-    background-color: #3D3D3D;
+    background-color: white;
+    /* Right box shadow */
+    webkit-box-shadow: 2px 0px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 2px 0px 5px 0px rgba(0,0,0,0.25);
+    box-shadow: 2px 0px 5px 0px rgba(0,0,0,0.25);
+    padding: 25px;
 }
-.header, .body {
-    padding: 10px;
+.container {
+    /* Left box shadow */
+    webkit-box-shadow: -2px 0px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: -2px 0px 5px 0px rgba(0,0,0,0.25);
+    box-shadow: -2px 0px 5px 0px rgba(0,0,0,0.25);
+    padding: 0;
 }
-.header {
-    font-weight: bold;
-    font-size: 2em;
+
+@media (min-width: 970px) {
+    .container{
+        width: 1300px;
+    }
+}
+
+.screenshots {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.screenshots .slick-prev:before, .slick-next:before {
+    color: #333;
 }
 
 img.screenshot {
@@ -76,9 +123,9 @@ img.screenshot {
     display: none;
 }
 
-.drop-shadow {
+/* .drop-shadow { */
 
-    -webkit-box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.58);
-    -moz-box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.58);
-    box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.58);
-}
+/*     -webkit-box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.58); */
+/*     -moz-box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.58); */
+/*     box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.58); */
+/* } */
