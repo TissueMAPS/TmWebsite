@@ -4,9 +4,10 @@ body, html {
 
 body {
     font-family: Helvetica, 'Trebuchet MS', sans-serif;
-    background: #ebebeb;
-    background-image: url('/resources/img/mocha.png');
-    background-repeat: repeat;
+    /* background: #ebebeb; */
+    /* background-image: url('/resources/img/mocha.png'); */
+    /* background-repeat: repeat; */
+    background-color: white;
 }
 
 
@@ -123,29 +124,34 @@ body {
 .navigation a {
     color: silver;
 }
-
-
 .content {
-    background-color: white;
-    /* Right box shadow */
-    webkit-box-shadow: 2px 0px 5px 0px rgba(0,0,0,0.25);
-    -moz-box-shadow: 2px 0px 5px 0px rgba(0,0,0,0.25);
-    box-shadow: 2px 0px 5px 0px rgba(0,0,0,0.25);
-    padding: 25px;
+    /* background-color: white; */
+    /* /1* Right box shadow *1/ */
+    /* webkit-box-shadow: 2px 0px 5px 0px rgba(0,0,0,0.25); */
+    /* -moz-box-shadow: 2px 0px 5px 0px rgba(0,0,0,0.25); */
+    /* box-shadow: 2px 0px 5px 0px rgba(0,0,0,0.25); */
+    /* padding: 25px; */
 }
 .container {
     /* Left box shadow */
-    webkit-box-shadow: -2px 0px 5px 0px rgba(0,0,0,0.25);
-    -moz-box-shadow: -2px 0px 5px 0px rgba(0,0,0,0.25);
-    box-shadow: -2px 0px 5px 0px rgba(0,0,0,0.25);
-    padding: 0;
+    /* webkit-box-shadow: -2px 0px 5px 0px rgba(0,0,0,0.25); */
+    /* -moz-box-shadow: -2px 0px 5px 0px rgba(0,0,0,0.25); */
+    /* box-shadow: -2px 0px 5px 0px rgba(0,0,0,0.25); */
+    /* padding: 0; */
+}
+section {
+    /* margin: 30px 0; */
+    padding: 50px 0;
+}
+section:nth-child(odd) {
+    background-color: #f2f2f2;
 }
 
-@media (min-width: 970px) {
-    .container{
-        width: 1300px;
-    }
-}
+/* @media (min-width: 970px) { */
+/*     .container{ */
+/*         width: 1300px; */
+/*     } */
+/* } */
 
 .screenshots {
     width: 95%;
