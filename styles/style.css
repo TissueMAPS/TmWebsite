@@ -124,7 +124,6 @@ body {
     color: silver;
 }
 
-
 .content {
     background-color: white;
     /* Right box shadow */
@@ -133,18 +132,13 @@ body {
     box-shadow: 2px 0px 5px 0px rgba(0,0,0,0.25);
     padding: 25px;
 }
+
 .container {
     /* Left box shadow */
     webkit-box-shadow: -2px 0px 5px 0px rgba(0,0,0,0.25);
     -moz-box-shadow: -2px 0px 5px 0px rgba(0,0,0,0.25);
     box-shadow: -2px 0px 5px 0px rgba(0,0,0,0.25);
     padding: 0;
-}
-
-@media (min-width: 970px) {
-    .container{
-        width: 1300px;
-    }
 }
 
 .screenshots {
