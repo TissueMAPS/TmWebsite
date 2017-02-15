@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hafenr/TmWebsite.git"
+    "url": "git+https://github.com/tissuemaps/TmWebsite.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hafenr/TmWebsite/issues"
+    "url": "https://github.com/tissuemaps/TmWebsite/issues"
   },
-  "homepage": "https://github.com/hafenr/TmWebsite#readme"
+  "homepage": "https://github.com/tissuemaps/TmWebsite#readme"
 }
